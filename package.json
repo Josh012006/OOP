@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/src.css -o ./public/styles.css --watch"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "tw-elements": "^2.0.0"
+  }
+}

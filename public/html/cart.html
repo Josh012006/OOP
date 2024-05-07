@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel = "stylesheet" href = "/public/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel = "icon" href = "/public/media/icon.png">
+</head>
+<body style = "font-family:'Times New Roman', Times, serif">
+    <header class = "bg-black flex flex-col rounded-t-lg min-h-16 border-yellow-500 border-2 lg:grid lg:grid-cols-12">
+        <div class = "flex items-center p-2 border-yellow-500 border-y-2 justify-center lg:col-span-5 lg:border-y-0 lg:border-x-2">
+            <img src = "/public/media/g.png" alt = "logo" class = "mx-1">
+            <h1 class = "font-bold text-2xl text-yellow-500">Gamekit</h1>
+        </div>
+        <nav class = "flex flex-col p-2 text-yellow-500 font-semibold justify-around items-center lg:flex-row lg:col-span-7" style = "font-size:18px">
+            <a href = "home.html" class = "hover:text-xl">Home</a>
+            <a href = "shop.html" class = "hover:text-xl">Shop</a>
+            <a href = "cart.html" class = "hover:text-xl">Cart</a>
+        </nav>
+    </header>
+
+    <main style = "min-height: 566px;" class = "text-white bg-slate-950 flex flex-col justify-around items-center lg:grid lg:grid-cols-3 lg:justify-items-center">
+        <div id = "products" class = "p-4 flex flex-col justify-around items-center lg:col-span-2"></div>
+        <div id = "receipt" class = "flex flex-col bg-slate-900 p-8 rounded-lg justify-around min-h-56 lg:col-span-1" style = "width: 300px;">
+            <div class = "flex justify-between items-center">
+                <p>Total price:</p>
+                <span id = "price">0 $US</span>
+            </div>
+            <div class = "flex justify-around items-center">
+                <a id = "pay" class = "cursor-pointer p-2 text-center bg-slate-800 rounded-lg">Pay</a>
+                <a href = "shop.html" class = "cursor-pointer p-2 text-center bg-slate-800 rounded-lg">Go to the shop</a> 
+            </div>
+        </div>
+    </main>
+
+    <footer class = "bg-black rounded-b-lg min-h-28 flex flex-col justify-around items-center p-3">
+        <p class = "text-center text-yellow-500">
+            &copy; 2024 Landing page <strong>Josué Mongan</strong>. All Rights reserved.
+            160 Grand-Yoff, Dakar, Senegal
+        </p>
+        <nav class = "flex justify-center items-center">
+            <i class="fa-brands fa-whatsapp text-yellow-500 text-2xl m-2"></i>
+            <i class="fa-brands fa-instagram text-yellow-500 text-2xl m-2"></i>
+            <i class="fa-brands fa-facebook text-yellow-500 text-2xl m-2"></i>
+        </nav>
+    </footer>
+
+    <script type = "module" src = "/public/scripts/cart.js"></script>
+</body>
+</html>
