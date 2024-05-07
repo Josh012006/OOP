@@ -75,7 +75,7 @@ fill(thirdGames, thirdContainer);
 
 
 // Gestion de l'ajout au panier
-// localStorage.removeItem("cartElements");
+// localStorage.removeItem("cartElements"); utilisé pour vider le localStorage pour faire le debugging
 // Création d'un objet qui contient les items dans le localStorage
 if(localStorage.getItem("cartElements") === null) {
     localStorage.setItem("cartElements", JSON.stringify([{}]));
