@@ -118,7 +118,7 @@ payButton.addEventListener("click", function() {
         let confirmation = confirm("Do you want to confirm your payment?");
         if(confirmation) {
             alert("Payment successful!");
-            deleteButtons.forEach((element) => element.click());
+            localStorage.clear();
         }
     }
 });
