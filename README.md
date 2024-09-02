@@ -1,5 +1,5 @@
 ## Preview
-<img src="public/g6.png" alt="preview"></img>
+<img src="public/media/g6.png" alt="preview"></img>
 
 ## About the project
 This is a very primitive e commerce website. It is done using the basic languages like HTML, CSS and JS(with the DOM).
